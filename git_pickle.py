@@ -92,7 +92,7 @@ def module_runner(module):
 	return
 
 #main loop
-sys.met_path = [GitImporter()]
+sys.meta_path = [GitImporter()]
 
 while True:
 	
