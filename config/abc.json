@@ -1,4 +1,4 @@
-{
+[
 	{
 		"module" : "dirlister"
 	},
@@ -6,5 +6,5 @@
 	{
 		"module" : "environment"
 	}
-}
+]
 
